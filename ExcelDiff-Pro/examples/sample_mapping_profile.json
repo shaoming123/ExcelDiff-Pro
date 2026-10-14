@@ -1,0 +1,36 @@
+{
+  "app": "ExcelDiff Pro",
+  "profile_version": 1,
+  "note": "Recheck the column letters and sample values if file layouts change.",
+  "sheets": {
+    "a": "Orders",
+    "b": "Payments"
+  },
+  "settings": {
+    "keys_a": [
+      1
+    ],
+    "keys_b": [
+      2
+    ],
+    "value_a": 4,
+    "value_b": 5,
+    "start_a": 2,
+    "start_b": 2,
+    "compare_type": "number",
+    "tolerance": "0.01",
+    "decimal_a": ".",
+    "decimal_b": ".",
+    "trim_keys": true,
+    "ignore_key_case": true,
+    "ignore_text_case": false,
+    "trim_text": true,
+    "aggregate": false,
+    "extra_a": [
+      2
+    ],
+    "extra_b": [
+      4
+    ]
+  }
+}

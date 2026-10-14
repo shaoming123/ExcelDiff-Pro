@@ -1,0 +1,140 @@
+html, body, [class*="css"], [data-testid="stAppViewContainer"] {font-family:Inter,'Segoe UI',Arial,sans-serif;}
+h1,h2,h3,h4 {font-family:Inter,'Segoe UI',Arial,sans-serif; letter-spacing:-.035em;}
+[data-testid="stAppViewContainer"] {background:#F6F8FC;}
+[data-testid="stSidebar"] {background:#FDFEFF;border-right:1px solid #E3E9F0;}
+[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] {color:#34445C;}
+.main .block-container {max-width:1280px; padding-top:2rem; padding-bottom:4rem;}
+[data-testid="stFileUploader"] {border-radius:12px;}
+div[data-testid="stFileUploaderDropzone"] {background:white;border:1.5px dashed #BBD3D6;border-radius:14px;padding:18px 8px;}
+div[data-testid="stFileUploaderDropzone"]:hover {border-color:#218D7F;background:#F4FAF8;}
+div[data-testid="stMetric"] {background:white;border:1px solid #E5ECF2;border-radius:14px;padding:17px 18px;min-height:110px;}
+div[data-testid="stMetric"] [data-testid="stMetricValue"] {font-family:Inter,'Segoe UI',Arial;font-weight:800;letter-spacing:-.035em;}
+div[data-testid="stVerticalBlockBorderWrapper"] {border-color:#E4EBF2 !important;border-radius:16px !important;}
+div.stButton button[kind="primary"] {background:#117F73; border-color:#117F73;border-radius:11px; font-weight:700;min-height:44px;}
+div.stButton button[kind="primary"]:hover {background:#0D695F;border-color:#0D695F;}
+div.stDownloadButton button[kind="primary"] {background:#117F73;border-color:#117F73;border-radius:11px;font-weight:700;}
+div.stButton button[kind="secondary"] {border:1px solid #DEE6ED; border-radius:11px; font-weight:600;}
+[data-testid="stTabs"] button[role="tab"] {font-weight:700;}
+.pill {display:inline-block;background:#E7F6F1;color:#0D786B;border:1px solid #CCE8DF;border-radius:100px;padding:6px 12px;font-size:12px;font-weight:800;letter-spacing:.065em;}
+.hero {padding:37px 41px 34px; background:radial-gradient(circle at 90% 0%, #263D5C 0%, #142940 47%, #101F35 100%);border-radius:23px;color:white;box-shadow:0 16px 35px rgba(29,51,77,.09);position:relative;overflow:hidden;margin-bottom:26px;}
+.hero:after {content:'';position:absolute;right:-70px;top:-90px;width:290px;height:290px;border-radius:50%;border:1px solid rgba(101,221,199,.24);box-shadow:0 0 0 45px rgba(101,221,199,.045),0 0 0 100px rgba(101,221,199,.03);pointer-events:none;}
+.hero h1 {font-size:clamp(31px,3.8vw,48px);line-height:1.12;color:#FFF;margin:18px 0 12px;font-weight:800;letter-spacing:-.05em;max-width:700px;}
+.hero h1 span {color:#78E5CE;}
+.hero p {font-size:15px;color:#CBD6E3;line-height:1.68;max-width:690px;margin:0;}
+.hero-mini {display:flex;gap:10px;flex-wrap:wrap;margin-top:24px;}
+.hero-mini span {font-size:12px;padding:7px 12px;border-radius:30px;background:rgba(255,255,255,.09);border:1px solid rgba(255,255,255,.12);color:#E3F2EF;font-weight:600;}
+.section-intro {font-size:12px;color:#0B877A;text-transform:uppercase;letter-spacing:.15em;font-weight:800;margin:25px 0 9px;}
+.section-title {font-family:Inter,'Segoe UI',Arial;font-size:23px;font-weight:800;letter-spacing:-.04em;color:#14253B;margin:4px 0 5px;}
+.section-desc {font-size:14px;color:#63748B;margin-bottom:15px;line-height:1.55;}
+.cardtag {display:inline-block;background:#EEF5FB;color:#325674;font-size:11px;font-weight:700;border-radius:100px;padding:5px 9px;}
+.filecard {padding:10px 0 4px;}
+.infocard {padding:18px 18px 14px;border:1px solid #E2EAF0;border-radius:14px;background:#fff;min-height:119px;}
+.infocard strong {display:block;font-size:15px;color:#142940;margin-bottom:4px;}
+.infocard p {font-size:12px;line-height:1.6;color:#6A7B8F;margin:0;}
+.statusbar {display:flex;height:11px;border-radius:12px;overflow:hidden;background:#DEE8ED;margin-top:13px;}
+.footer {padding:26px 0;margin-top:38px;border-top:1px solid #E1E7EF;font-size:12px;color:#73829A;line-height:1.8;}
+.brand {display:flex;align-items:center;gap:11px;margin-bottom:19px;}
+.brand-icon {display:flex;align-items:center;justify-content:center;width:42px;height:42px;background:#0C8074;color:white;border-radius:12px;font-size:24px;font-weight:800;}
+.brand h3 {font-family:Inter,'Segoe UI',Arial;font-size:17px;color:#14243B;letter-spacing:-.04em;margin:0;}
+.brand small {font-size:11px;color:#7B8799;letter-spacing:.04em;}
+hr {border-color:#E4EAF1;}
+@media(max-width:640px){.hero{padding:27px 23px}.main .block-container {padding-left:15px;padding-right:15px}}
+
+
+[data-testid="stDataFrame"] {border-radius:12px;overflow:hidden;border:1px solid #E5EBF0;}
+[data-testid="stSelectbox"] div[data-baseweb="select"] {border-radius:10px;}
+.st-key-language select{font-weight:700;}
+.steps{display:flex;gap:9px;flex-wrap:wrap;margin-bottom:14px;}
+.steps span{padding:8px 13px;border-radius:8px;border:1px solid #DEE8F0;color:#56647B;font-size:12px;font-weight:700;background:#FFF;}
+.small-note{font-size:12px;color:#74839A;margin:7px 0;}
+
+/* Email CTA: native mailto link, no form, tracking, or backend. */
+.contact-mini {
+  background: #F2F8F7;
+  border: 1px solid #CFE7E1;
+  border-radius: 14px;
+  padding: 16px 14px 14px;
+  margin: 1px 0 0;
+}
+.contact-mini-kicker {
+  color: #117E72;
+  font-weight: 800;
+  font-size: 10px;
+  letter-spacing: .11em;
+  margin-bottom: 8px;
+}
+.contact-mini strong {
+  color: #163349;
+  font-weight: 800;
+  line-height: 1.35;
+  font-size: 13px;
+  display: block;
+}
+.contact-mini p {
+  color: #526B79;
+  font-size: 12px;
+  line-height: 1.55;
+  margin: 8px 0 10px;
+}
+.contact-mini a {
+  color: #0A7169;
+  font-size: 13px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.contact-mini a:hover {color: #034D47;}
+.contact-email {color: #687F8D;font-size: 11px;margin-top: 9px;overflow-wrap: anywhere;}
+.contact-panel {
+  border: 1px solid #CFE8E2;
+  border-radius: 20px;
+  padding: 28px 32px;
+  background: linear-gradient(125deg,#F2FBF8 0%,#F7FBFF 73%,#FFFFFF 100%);
+  box-shadow: 0 10px 32px rgba(12,75,73,.04);
+  margin: 27px 0 6px;
+}
+.contact-panel-kicker {
+  font-size: 11px;
+  letter-spacing: .13em;
+  color: #0B8579;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.contact-panel h2 {
+  color: #142C3D;
+  font-family: Inter,'Segoe UI',Arial,sans-serif;
+  font-size: clamp(22px,2.6vw,28px);
+  font-weight: 800;
+  letter-spacing: -.04em;
+  line-height: 1.22;
+  margin: 0 0 12px;
+}
+.contact-panel p {
+  color: #425E72;
+  font-size: 14px;
+  line-height: 1.75;
+  max-width: 920px;
+  margin: 0;
+}
+.contact-panel-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  margin: 20px 0 13px;
+}
+.contact-button {
+  background: #0D8174;
+  color: #FFFFFF !important;
+  padding: 12px 19px;
+  border-radius: 10px;
+  display: inline-block;
+  text-decoration: none !important;
+  font-size: 13px;
+  font-weight: 800;
+  box-shadow: 0 4px 12px rgba(13,129,116,.14);
+}
+.contact-button:hover {background:#09685F;color:#FFFFFF !important;}
+.contact-address {color: #285165;font-size: 13px;font-weight: 700;overflow-wrap: anywhere;}
+.contact-panel-hint {font-size: 12px;color: #728698;line-height: 1.6;}
+@media(max-width:640px){.contact-panel{padding:23px 19px}.contact-panel-actions{align-items:flex-start;flex-direction:column;gap:12px}}
